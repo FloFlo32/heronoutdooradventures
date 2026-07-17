@@ -1,12 +1,13 @@
 "use client";
 
 import * as React from "react";
-import { PhotoFrame } from "@/components/magic/photo-frame";
 import { cn } from "@/lib/utils";
 
 /**
- * Slideshow — auto-advancing photo background. Each photo is shown via
- * PhotoFrame (never cropped) with a soft cross-fade, plus dot controls.
+ * Slideshow — auto-advancing photo background. Fills its container edge to
+ * edge (object-cover, anchored to the top so faces never get cut off) with a
+ * soft cross-fade, plus dot controls. Every photo in a set is shown at the
+ * same size, no letterboxing.
  */
 export function Slideshow({
   images,
@@ -32,15 +33,17 @@ export function Slideshow({
   }, [slides.length, interval]);
 
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div className={cn("relative overflow-hidden bg-muted", className)}>
       {slides.map((src, i) => (
-        <PhotoFrame
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
           key={src}
           src={src}
           alt={alt}
-          priority={i === 0}
+          loading={i === 0 ? "eager" : "lazy"}
+          decoding="async"
           className={cn(
-            "absolute inset-0 h-full w-full transition-opacity duration-700 ease-out",
+            "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700 ease-out",
             i === index ? "opacity-100" : "opacity-0"
           )}
         />

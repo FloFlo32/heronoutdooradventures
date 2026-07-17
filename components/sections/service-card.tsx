@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Clock, Phone, ArrowRight } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
-import { PhotoFrame } from "@/components/magic/photo-frame";
 
 const telHref = `tel:+1${brand.contact.phone}`;
 
@@ -33,12 +32,16 @@ export function ServiceCard({
         featured ? "border-primary/30 ring-1 ring-primary/20" : "border-border"
       }`}
     >
-      <PhotoFrame
-        src={image}
-        alt={imageAlt}
-        className="aspect-[4/3]"
-        imgClassName="transition-transform duration-500 group-hover:scale-[1.04]"
-      />
+      <div className="aspect-[4/3] overflow-hidden bg-muted">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={image}
+          alt={imageAlt}
+          loading="lazy"
+          decoding="async"
+          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+      </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-xl font-semibold">

@@ -1,16 +1,18 @@
 import { Reveal } from "@/components/magic/reveal";
-import { PhotoFrame } from "@/components/magic/photo-frame";
 
 export function Welcome() {
   return (
     <section className="container-px mx-auto max-w-7xl py-20 sm:py-28">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <Reveal>
-          <PhotoFrame
-            src="/ingested/heronoutdooradventures/content-003.webp"
-            alt="Anglers holding a large striped bass caught on Lake Allatoona"
-            className="aspect-[4/3] rounded-3xl border border-border shadow-lg shadow-primary/5"
-          />
+          <div className="overflow-hidden rounded-3xl border border-border shadow-lg shadow-primary/5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/ingested/heronoutdooradventures/content-003.webp"
+              alt="Anglers holding a large striped bass caught on Lake Allatoona"
+              className="aspect-[4/3] w-full object-cover object-top"
+            />
+          </div>
         </Reveal>
 
         <Reveal delay={0.08}>
