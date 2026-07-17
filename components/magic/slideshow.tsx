@@ -43,7 +43,7 @@ export function Slideshow({
           loading={i === 0 ? "eager" : "lazy"}
           decoding="async"
           className={cn(
-            "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700 ease-out",
+            "absolute -inset-px h-[calc(100%+2px)] w-[calc(100%+2px)] object-cover object-top transition-opacity duration-700 ease-out",
             i === index ? "opacity-100" : "opacity-0"
           )}
         />
