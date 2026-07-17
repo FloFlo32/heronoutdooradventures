@@ -8,9 +8,9 @@ export function Welcome() {
           <div className="overflow-hidden rounded-3xl border border-border shadow-lg shadow-primary/5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/ingested/heronoutdooradventures/content-003.webp"
-              alt="Anglers holding a large striped bass caught on Lake Allatoona"
-              className="aspect-[4/3] w-full object-cover"
+              src="/ingested/heronoutdooradventures/content-001.webp"
+              alt="A group of anglers holding a striped bass caught on Lake Allatoona"
+              className="aspect-[4/3] w-full object-cover object-top"
             />
           </div>
         </Reveal>

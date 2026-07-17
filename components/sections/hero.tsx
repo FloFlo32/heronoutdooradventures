@@ -50,9 +50,9 @@ export function Hero() {
             <div className="overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/ingested/heronoutdooradventures/content-001.webp"
-                alt="A group of anglers holding a striped bass caught on Lake Allatoona at sunset"
-                className="aspect-[4/5] w-full object-cover sm:aspect-[5/6]"
+                src="/ingested/heronoutdooradventures/content-015.webp"
+                alt="A young angler holding a striped bass caught on Lake Allatoona"
+                className="aspect-[4/5] w-full object-cover object-top sm:aspect-[5/6]"
               />
             </div>
             <div className="absolute -bottom-8 -left-6 hidden w-44 overflow-hidden rounded-2xl border-4 border-background shadow-xl sm:block">

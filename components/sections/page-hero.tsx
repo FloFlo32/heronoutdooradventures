@@ -33,7 +33,7 @@ export function PageHero({
         <img
           src={image}
           alt={imageAlt}
-          className="h-[38vh] min-h-[280px] w-full object-cover sm:h-[46vh]"
+          className="aspect-[12/5] max-h-[420px] min-h-[220px] w-full object-cover object-top"
         />
       </div>
 

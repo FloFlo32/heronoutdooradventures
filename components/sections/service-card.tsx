@@ -36,7 +36,7 @@ export function ServiceCard({
           alt={imageAlt}
           loading="lazy"
           decoding="async"
-          className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
