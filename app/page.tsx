@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/sections/navbar";
 import { Hero } from "@/components/sections/hero";
-import { LogoCloud } from "@/components/sections/logo-cloud";
-import { Bento } from "@/components/sections/bento";
-import { Features } from "@/components/sections/features";
-import { Proof } from "@/components/sections/stats";
-import { CTA } from "@/components/sections/cta";
+import { Welcome } from "@/components/sections/welcome";
+import { Highlights } from "@/components/sections/highlights";
+import { SocialBand } from "@/components/sections/social-band";
+import { AskGuide } from "@/components/sections/ask-guide";
+import { Map } from "@/components/sections/map";
 import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
@@ -13,11 +13,11 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <LogoCloud />
-        <Features />
-        <Bento />
-        <Proof />
-        <CTA />
+        <Welcome />
+        <Highlights />
+        <SocialBand />
+        <AskGuide />
+        <Map />
       </main>
       <Footer />
     </>

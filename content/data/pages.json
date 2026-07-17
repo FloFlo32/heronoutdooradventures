@@ -1,0 +1,485 @@
+{
+  "/": {
+    "path": "/",
+    "title": "Lake Allatoona Fishing Guide | Heron Outdoor Adventures",
+    "description": "Heron Outdoor Adventures is your premier Lake Allatoona Fishing Guide near Atlanta Georgia. We specialize in catching Striped Bass, Hybrids, Crappie and all North Georgia species.",
+    "content": [
+      {
+        "tag": "p",
+        "text": "Your Premier Lake Allatoona Fishing Guide"
+      },
+      {
+        "tag": "h2",
+        "text": "Welcome Aboard!"
+      },
+      {
+        "tag": "a",
+        "text": "Book Now"
+      },
+      {
+        "tag": "h2",
+        "text": "The Best Adventures Start Here"
+      },
+      {
+        "tag": "p",
+        "text": "With Over 40 years of Experience, Pro Guide Joseph knows that it's not just about setting the hook, but experiencing everything that the waters offer. We strive to create an Adventure that has the potential to put you on a catch of a lifetime. Check out all that Heron Outdoors Adventures has to offer!"
+      },
+      {
+        "tag": "p",
+        "text": "INSTRUCTIONAL"
+      },
+      {
+        "tag": "p",
+        "text": "Sharing my knowledge to future guides, anglers and teaching my experiences to help Conservation"
+      },
+      {
+        "tag": "button",
+        "text": "Read More"
+      },
+      {
+        "tag": "p",
+        "text": "CHARTERS"
+      },
+      {
+        "tag": "p",
+        "text": "Experience an Adventure like never before, set the hook on some of the best fisheries in the US!"
+      },
+      {
+        "tag": "p",
+        "text": "MEET YOUR GUIDE"
+      },
+      {
+        "tag": "p",
+        "text": "The best thing about my job is being able to see the joy and happiness in my clients. That same smile I had as a kid!"
+      },
+      {
+        "tag": "p",
+        "text": "THE HERON REPORT"
+      },
+      {
+        "tag": "p",
+        "text": "Get the latest fishing Reports on the waters I fish 180 days out of the year!"
+      },
+      {
+        "tag": "h2",
+        "text": "Social Media"
+      },
+      {
+        "tag": "h2",
+        "text": "Ask the Guide!"
+      },
+      {
+        "tag": "button",
+        "text": "Submit"
+      },
+      {
+        "tag": "p",
+        "text": "Thanks for submitting!"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-001.webp",
+      "/ingested/heronoutdooradventures/content-003.webp",
+      "/ingested/heronoutdooradventures/content-004.webp",
+      "/ingested/heronoutdooradventures/content-005.webp",
+      "/ingested/heronoutdooradventures/content-006.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/about-us": {
+    "path": "/about-us",
+    "title": "About Us | Dallas GA | Heron Outdoor Adventures",
+    "description": "About in Dallas, GA.\n",
+    "content": [
+      {
+        "tag": "h3",
+        "text": "MEET YOUR GUIDE"
+      },
+      {
+        "tag": "p",
+        "text": "My name is Joseph, and I would be honored to be your guide. I have been an avid fisherman for over 40 years. Our Team also includes Striper Mike and Catfish Jake that harbor decades of additional experience."
+      },
+      {
+        "tag": "p",
+        "text": "I started guiding people on fishing adventures and other outdoor excursions as early as age 15 on the Great Lakes and many Northeastern U.S. lakes and streams."
+      },
+      {
+        "tag": "p",
+        "text": "I am thrilled to now have the opportunity to offer my skills and resources to carry out my dreams of fishing and serving my community. Here at Heron Outdoors, we pride ourselves on instructional fishing, teaching the balance of nature and"
+      },
+      {
+        "tag": "p",
+        "text": "conservation, relationship building and creating memories that last a lifetime."
+      },
+      {
+        "tag": "button",
+        "text": "BOOK A CHARTER"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-011.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/adventures": {
+    "path": "/adventures",
+    "title": "Lake Allatoona Fishing Guide | Heron Outdoor Adventures Atlanta GA",
+    "description": "Book your guided fishing trip for Striped Bass (Stripers), Hybrids, Spotted Bass, Crappie, Bream, Catfish or any other desired species on Lake Allatoona near Atlanta Georgia with Heron Outdoor Adventures to create a lifelong memory. \nAll lake activity excursions are available.",
+    "content": [
+      {
+        "tag": "h2",
+        "text": "BOOK YOUR ADVENTURE"
+      },
+      {
+        "tag": "h4",
+        "text": "STRIPER | BASS | CATFISH | CRAPPIE | ADVENTURE"
+      },
+      {
+        "tag": "p",
+        "text": "LAKE ALLATOONA"
+      },
+      {
+        "tag": "p",
+        "text": "CARTERS LAKE"
+      },
+      {
+        "tag": "p",
+        "text": "LAKE LANIER"
+      },
+      {
+        "tag": "p",
+        "text": "ETOWAH RIVER"
+      },
+      {
+        "tag": "p",
+        "text": "COOSA RIVER"
+      },
+      {
+        "tag": "li",
+        "text": "4 Hour Fishing TripPLEASE CALL/TEXT 404-919-4918 or USE HOME PAGE \"BOOK NOW\"Read More4 hr400 US dollars$400More Info"
+      },
+      {
+        "tag": "a",
+        "text": "4 Hour Fishing Trip"
+      },
+      {
+        "tag": "p",
+        "text": "PLEASE CALL/TEXT 404-919-4918 or USE HOME PAGE \"BOOK NOW\""
+      },
+      {
+        "tag": "a",
+        "text": "Read More"
+      },
+      {
+        "tag": "p",
+        "text": "4 hr"
+      },
+      {
+        "tag": "p",
+        "text": "$400"
+      },
+      {
+        "tag": "a",
+        "text": "More Info"
+      },
+      {
+        "tag": "li",
+        "text": "6 Hour Guided Fishing TripPLEASE CALL/TEXT 404-919-4918 or USE HOME PAGE \"BOOK NOW\"Read More6 hr600 US dollars$600More Info"
+      },
+      {
+        "tag": "a",
+        "text": "6 Hour Guided Fishing Trip"
+      },
+      {
+        "tag": "p",
+        "text": "6 hr"
+      },
+      {
+        "tag": "p",
+        "text": "$600"
+      },
+      {
+        "tag": "li",
+        "text": "Nature Adventure / Sunset CruiseRelax and enjoy the sights and sounds of natureRead More2 hr150 US dollars$150Book Now"
+      },
+      {
+        "tag": "a",
+        "text": "Nature Adventure / Sunset Cruise"
+      },
+      {
+        "tag": "p",
+        "text": "Relax and enjoy the sights and sounds of nature"
+      },
+      {
+        "tag": "p",
+        "text": "2 hr"
+      },
+      {
+        "tag": "p",
+        "text": "$150"
+      },
+      {
+        "tag": "a",
+        "text": "Book Now"
+      },
+      {
+        "tag": "li",
+        "text": "Lineside Experience Clinic2-3 day excursions scheduled to maximize your adventure and learning.Read More12 hrFrom $1000From $1000More Info"
+      },
+      {
+        "tag": "a",
+        "text": "Lineside Experience Clinic"
+      },
+      {
+        "tag": "p",
+        "text": "2-3 day excursions scheduled to maximize your adventure and learning."
+      },
+      {
+        "tag": "p",
+        "text": "12 hr"
+      },
+      {
+        "tag": "p",
+        "text": "From $1000"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-014.webp",
+      "/ingested/heronoutdooradventures/content-015.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/fishing-guide-lake-allatoona": {
+    "path": "/fishing-guide-lake-allatoona",
+    "title": "Fishing Guide Lake Allatoona | Acworth GA | Heron Outdoor Adventures",
+    "description": "Lake Allatoona is beautiful to explore. Close to Atlanta, this lake is filled with various species of fish, birds, and wildlife inhabiting the waters and areas surrounding the lake. Described as a piece of heaven, just outside the city, Lake Allatoona is easily accessible from Atlanta. ",
+    "content": [
+      {
+        "tag": "p",
+        "text": "Fishing Guide Lake Allatoona"
+      },
+      {
+        "tag": "h2",
+        "text": "From Fishing to Wildlife, Outdoor Excursions Are For All to Enjoy"
+      },
+      {
+        "tag": "p",
+        "text": "Lake Allatoona is beautiful to explore. Close to Atlanta, this lake is filled with various species of fish, birds, and wildlife inhabiting the waters and areas surrounding the lake. Described as a piece of heaven, just outside the city, Lake Allatoona is easily accessible from Atlanta. For an experienced and most knowledgeable fishing guide Lake Allatoona has to offer, reach out to Heron Outdoor Adventures. With years of experience, our team is dedicated to providing a comprehensive and successful fishing trip. There is little you need to prepare for when accompanied by one of the finest fishing guides Lake Allatoona has to offer. For fishers over the age of 16, simply have your valid state of Georgia fishing license. Bring any personal gear you may want for your big adventure. This can include sunscreen, hat, sunglasses, and appropriate footwear for your fishing trip. We are happy to provide bottled water for your trip, but feel free to bring any additional beverages you may want. Our outdoor excursions are not limited to fishing trips. As nature enthusiasts ourselves, we understand that the nature surrounding the lake does not stop at fishing. We are pleased to offer outdoor excursions geared toward bird watching and nature watching. Visitors often have the opportunity to see osprey, blue heron, and even a bald eagle on an outdoor excursion. To prepare for your trip, bring any binoculars or special camera equipment necessary to catch a photo of a rare bird. ​"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/striper-fishing-guide": {
+    "path": "/striper-fishing-guide",
+    "title": "Striper Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+    "description": "Whether you have years of experience fishing, or are brand new to the sport, a fishing guide service can be a valuable asset to your adventure. For newcomers to the sport, we offer educational classes. ",
+    "content": [
+      {
+        "tag": "p",
+        "text": "Striper Fishing Guide"
+      },
+      {
+        "tag": "h2",
+        "text": "Offering Comprehensive Fishing Guide Service"
+      },
+      {
+        "tag": "p",
+        "text": "We are pleased to explain the difference between lures and bait, and the tips and techniques used to find the best schools of fish. For experienced fishers, we are happy to chase after schools of fish to make sure your fishing adventure is successful. We also offer a unique opportunity for experienced fly-fishers to tie into Hybrids and Stripers in several seasons throughout the year. Because of our location, based out of Acworth GA, the team at Heron Outdoor Adventures specializes in guided tours on Lake Allatoona. Just thirty minutes outside the city, we are happy to be the fishing guide service of business men and women alike. Join us to be with an experienced striper fishing guide. This type of fish is commonly referred to as a striper, but in actuality it is a striped bass. Although this fish is prevalent from south of the Carolinas clear up to Nova Scotia, catching a striper can be a challenge. Typically, stripers are reserved for experienced anglers. Using a striper fishing guide can help increase your chances of nailing a big catch. The professionals at Heron Outdoor Adventures know the best bait and fishing techniques to use in order to catch a striper. We offer catch and release practices on our excursions."
+      },
+      {
+        "tag": "a",
+        "text": "CATCH SOME STRIPER"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-006.webp",
+      "/ingested/heronoutdooradventures/content-017.webp",
+      "/ingested/heronoutdooradventures/content-018.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/crappie-fishing-guide": {
+    "path": "/crappie-fishing-guide",
+    "title": "Crappie Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+    "description": "Navigating the waterways of Lake Allatoona can be a challenge. Finding the best places for fish native to this area can be hard, unless you know where to look. One of the fish that is prevalent in Lake Allatoona is the crappie. ",
+    "content": [
+      {
+        "tag": "p",
+        "text": "Crappie Fishing Guide"
+      },
+      {
+        "tag": "h2",
+        "text": "THE Premier Crappie Fishing Guide"
+      },
+      {
+        "tag": "p",
+        "text": "Navigating the waterways of Lake Allatoona can be a challenge. Finding the best places for fish native to this area can be hard, unless you know where to look. One of the fish that is prevalent in Lake Allatoona is the crappie. The crappie is a popular fish in North America that is small to medium size. The largest crappie on record is just over five pounds. This fish can be found in various waterways, but is commonly found in our lake. There are two main species of crappie including the white crappie and the black crappie. Hiring a crappie fishing guide is a great way to make sure your fishing adventure is successful. There are various lures and baits that are necessary to catch crappie, and a crappie fishing guide is able to help direct your fishing efforts. Whether you start early in the morning, or at dusk, your crappie fishing adventure can be successful with a skilled and knowledgeable guide. Getting out of the busy city can be tough, especially for hardworking professionals working in Atlanta. Many people often search for, \"fishing trips near me\" in order to coordinate a fishing adventure close to the office or home. A slice of heaven, Lake Allatoona offers the ease and convenience for people residing or working in the city."
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-019.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/catfish": {
+    "path": "/catfish",
+    "title": "Catfish! | Heron Outdoors",
+    "description": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "We are excited to now be offering Catfish Adventures in 2020. Start your trip out with an exciting boat ride in a new Storm Cat powered by a 250 Yamaha SHO, get the big bite from an Allatoona monster and end up with bragging rights for life. We will be targeting the bigger Blues, Flatheads and Channel Cats that elude most fisherman here on Allatoona, but we know exactly what to do to get that bite. We do believe that any trophy cats are best released to help sustain this fishery, but you can catch some eaters, too! 4-6 hour Day and Night trips available. Call for details today."
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-020.webp"
+    ]
+  },
+  "/kids-fishing-guide": {
+    "path": "/kids-fishing-guide",
+    "title": "Kids Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+    "description": "For some people, simply being outdoors in nature is enough to relax. Not everyone loves to fish, and that is alright! We too are passionate about the environment and nature, and are pleased to offer outdoor nature tours. ",
+    "content": [
+      {
+        "tag": "p",
+        "text": "TAKE YOUR KID FISHING!"
+      },
+      {
+        "tag": "a",
+        "text": "BOOK A TRIP"
+      },
+      {
+        "tag": "p",
+        "text": "A love of nature and fishing starts at an early age. Our team at Heron Outdoor Adventures, based out of Acworth, GA, is pleased to offer opportunities for a kids fishing guide. We want to instill our youth with a love and respect for nature at an early age. For young children, we teach the basics of fishing and help children learn techniques at an early age. We will help children identify different species of fish, and learn the appropriate lures and bait necessary to catch the fish. Our practice is a catch and release operation, so children will have a hands on experience with the fish they catch, before safely releasing them safely back into the water. We can help guide children of all ages, and understand that different ages have different fishing ability and learning ability. We have a large, 24 foot boat that has all the necessary safety equipment for children. If you are looking for a kids fishing guide, we are sure to create an educational and memorable experience for your child."
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-021.webp",
+      "/ingested/heronoutdooradventures/content-022.webp",
+      "/ingested/heronoutdooradventures/content-023.webp",
+      "/ingested/heronoutdooradventures/content-024.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/instructional-fishing-classes": {
+    "path": "/instructional-fishing-classes",
+    "title": "Instructional Fishing Classes | Acworth GA | Heron Outdoor Adventures",
+    "description": "If you are looking for the best fishing guide Atlanta GA has to offer, then look no further. The team at Heron Outdoor Adventures is experienced, passionate, and dedicated to fishing and exploring the outdoors. ",
+    "content": [
+      {
+        "tag": "h2",
+        "text": "INSTRUCTIONAL CLASSES"
+      },
+      {
+        "tag": "h2",
+        "text": "Learn from the Guide Service that has over 40 years experience!"
+      },
+      {
+        "tag": "p",
+        "text": "If you have always wanted to learn how to fish, the team at Heron Outdoor Adventures is here for you! Based in Acworth, GA, our team has decades of experience. we are able to show you different techniques and instructions about which lures and bait to use. We are passionate about the outdoors and are happy to also explain the environment and the delicate balance between the species living in and around Lake Allatoona. Our instructional fishing classes are fun, engaging, and helpful to seasoned fishers too."
+      },
+      {
+        "tag": "h4",
+        "text": "Ask about our classes if you would like to refine your technique or learn more about the fish living in Georgia's waterways including Lake Allatoona, Carters Lake, The Coosa and Etowah Rivers."
+      },
+      {
+        "tag": "a",
+        "text": "BOOK YOUR CLASS"
+      },
+      {
+        "tag": "h2",
+        "text": "Have Questions?"
+      },
+      {
+        "tag": "button",
+        "text": "Send"
+      },
+      {
+        "tag": "p",
+        "text": "Thanks for submitting!"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-024.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/blog": {
+    "path": "/blog",
+    "title": "Blog | Heron Outdoor Adventures | United States",
+    "description": "All things awesome in nature on Lake Allatoona near Atlanta, Georgia",
+    "content": [
+      {
+        "tag": "h2",
+        "text": "THE HERON REPORT"
+      },
+      {
+        "tag": "a",
+        "text": "February Fishing Report - the Allatoona Bite"
+      },
+      {
+        "tag": "a",
+        "text": "Captain Joseph Martinelli"
+      },
+      {
+        "tag": "a",
+        "text": "The Bite : Lake Allatoona fishing report for December"
+      },
+      {
+        "tag": "a",
+        "text": "When the fish are chewing, what are you doing? Here's a few pointers to maximize your catches."
+      },
+      {
+        "tag": "a",
+        "text": "Lake Allatoona Fishing Report - The Bite"
+      },
+      {
+        "tag": "a",
+        "text": "They chewing. Let's go fishing!!"
+      },
+      {
+        "tag": "a",
+        "text": "The Bite - Lake Allatoona"
+      },
+      {
+        "tag": "a",
+        "text": "The Bite: Lake Allatoona fishing report - March 23, 2024"
+      }
+    ],
+    "images": [
+      "/ingested/heronoutdooradventures/content-027.webp",
+      "/ingested/heronoutdooradventures/content-028.webp",
+      "/ingested/heronoutdooradventures/content-029.webp",
+      "/ingested/heronoutdooradventures/content-030.webp",
+      "/ingested/heronoutdooradventures/content-031.webp",
+      "/ingested/heronoutdooradventures/content-032.webp",
+      "/ingested/heronoutdooradventures/content-009.webp"
+    ]
+  },
+  "/gift-card": {
+    "path": "/gift-card",
+    "title": "Gift Card | Heron Outdoors",
+    "description": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "Ticket to Adventure! Gift Cards for all occasions"
+      },
+      {
+        "tag": "p",
+        "text": "$400"
+      },
+      {
+        "tag": "button",
+        "text": "Add to Cart"
+      },
+      {
+        "tag": "button",
+        "text": "Buy Now"
+      }
+    ],
+    "images": []
+  }
+}

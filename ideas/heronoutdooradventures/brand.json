@@ -1,0 +1,251 @@
+{
+  "source": "https://www.heronoutdooradventures.com/",
+  "ingestedFromHost": "heronoutdooradventures.com",
+  "pagesCrawled": 11,
+  "name": "Heron Outdoors",
+  "tagline": "Lake Allatoona Fishing Guide | Heron Outdoor Adventures",
+  "description": "Heron Outdoor Adventures is your premier Lake Allatoona Fishing Guide near Atlanta Georgia. We specialize in catching Striped Bass, Hybrids, Crappie and all North Georgia species.",
+  "domain": "heronoutdooradventures.com",
+  "brandColor": {
+    "hex": "#116dff",
+    "src": "css-frequency",
+    "oklchHue": 261
+  },
+  "theme": {
+    "hue": 261
+  },
+  "fonts": [],
+  "logo": null,
+  "logoNote": "Logo not auto-found — grab the navbar logo manually",
+  "favicon": "https://static.wixstatic.com/media/40166c_20efe56c77ea466a8593a25485e1158f%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/40166c_20efe56c77ea466a8593a25485e1158f%7Emv2.png",
+  "images": [
+    "/ingested/heronoutdooradventures/img-002.webp",
+    "/ingested/heronoutdooradventures/img-018.webp",
+    "/ingested/heronoutdooradventures/img-019.webp",
+    "/ingested/heronoutdooradventures/img-025.webp",
+    "/ingested/heronoutdooradventures/img-026.webp",
+    "/ingested/heronoutdooradventures/img-036.webp",
+    "/ingested/heronoutdooradventures/img-040.webp",
+    "/ingested/heronoutdooradventures/img-041.webp",
+    "/ingested/heronoutdooradventures/img-043.webp",
+    "/ingested/heronoutdooradventures/img-044.webp",
+    "/ingested/heronoutdooradventures/img-045.webp",
+    "/ingested/heronoutdooradventures/img-046.webp",
+    "/ingested/heronoutdooradventures/img-047.webp",
+    "/ingested/heronoutdooradventures/img-048.webp",
+    "/ingested/heronoutdooradventures/img-049.webp",
+    "/ingested/heronoutdooradventures/img-050.webp",
+    "/ingested/heronoutdooradventures/img-051.webp",
+    "/ingested/heronoutdooradventures/img-052.webp"
+  ],
+  "imageCount": 18,
+  "social": {
+    "instagram": "https://www.instagram.com/wix",
+    "x": "https://twitter.com/HeronOutdoor"
+  },
+  "whatsapp": null,
+  "phone": null,
+  "location": {
+    "address": "Dallas, Georgia, 30102,  United States",
+    "lat": "34.0787375",
+    "lng": "-84.7977388",
+    "mapQuery": "Dallas, Georgia, 30102,  United States"
+  },
+  "sectionOrder": [
+    "Welcome Aboard!",
+    "The Best Adventures Start Here",
+    "Social Media",
+    "Ask the Guide!"
+  ],
+  "navItems": [
+    {
+      "text": "HomeMeet Your GuideBook Now: 404-919-4918Let's Go Fishing!Fishing Guide Lake AllatoonaStriper Fishing GuideCrappie Fishing GuideCatfish!Kids Fishing GuideInstructional Fishing ClassesLake Allatoona Fishing ReportContact usGift CardMoreUse tab to navigate through the menu items.Log In",
+      "url": "https://www.heronoutdooradventures.com/undefined",
+      "path": "/undefined"
+    },
+    {
+      "text": "Meet Your Guide",
+      "url": "https://www.heronoutdooradventures.com/about-us",
+      "path": "/about-us"
+    },
+    {
+      "text": "Book Now: 404-919-4918",
+      "url": "https://www.heronoutdooradventures.com/adventures",
+      "path": "/adventures"
+    },
+    {
+      "text": "Fishing Guide Lake Allatoona",
+      "url": "https://www.heronoutdooradventures.com/fishing-guide-lake-allatoona",
+      "path": "/fishing-guide-lake-allatoona"
+    },
+    {
+      "text": "Striper Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/striper-fishing-guide",
+      "path": "/striper-fishing-guide"
+    },
+    {
+      "text": "Crappie Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/crappie-fishing-guide",
+      "path": "/crappie-fishing-guide"
+    },
+    {
+      "text": "Catfish!",
+      "url": "https://www.heronoutdooradventures.com/catfish",
+      "path": "/catfish"
+    },
+    {
+      "text": "Kids Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/kids-fishing-guide",
+      "path": "/kids-fishing-guide"
+    },
+    {
+      "text": "Instructional Fishing Classes",
+      "url": "https://www.heronoutdooradventures.com/instructional-fishing-classes",
+      "path": "/instructional-fishing-classes"
+    },
+    {
+      "text": "Lake Allatoona Fishing Report",
+      "url": "https://www.heronoutdooradventures.com/blog",
+      "path": "/blog"
+    },
+    {
+      "text": "Gift Card",
+      "url": "https://www.heronoutdooradventures.com/gift-card",
+      "path": "/gift-card"
+    }
+  ],
+  "footerItems": [
+    {
+      "text": "Meet Your Guide",
+      "url": "https://www.heronoutdooradventures.com/about-us",
+      "path": "/about-us"
+    },
+    {
+      "text": "Book Now: 404-919-4918",
+      "url": "https://www.heronoutdooradventures.com/adventures",
+      "path": "/adventures"
+    },
+    {
+      "text": "Fishing Guide Lake Allatoona",
+      "url": "https://www.heronoutdooradventures.com/fishing-guide-lake-allatoona",
+      "path": "/fishing-guide-lake-allatoona"
+    },
+    {
+      "text": "Striper Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/striper-fishing-guide",
+      "path": "/striper-fishing-guide"
+    },
+    {
+      "text": "Crappie Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/crappie-fishing-guide",
+      "path": "/crappie-fishing-guide"
+    },
+    {
+      "text": "Catfish!",
+      "url": "https://www.heronoutdooradventures.com/catfish",
+      "path": "/catfish"
+    },
+    {
+      "text": "Kids Fishing Guide",
+      "url": "https://www.heronoutdooradventures.com/kids-fishing-guide",
+      "path": "/kids-fishing-guide"
+    },
+    {
+      "text": "Instructional Fishing Classes",
+      "url": "https://www.heronoutdooradventures.com/instructional-fishing-classes",
+      "path": "/instructional-fishing-classes"
+    },
+    {
+      "text": "Lake Allatoona Fishing Report",
+      "url": "https://www.heronoutdooradventures.com/blog",
+      "path": "/blog"
+    },
+    {
+      "text": "Gift Card",
+      "url": "https://www.heronoutdooradventures.com/gift-card",
+      "path": "/gift-card"
+    }
+  ],
+  "innerPages": [
+    {
+      "path": "/about-us",
+      "title": "About Us | Dallas GA | Heron Outdoor Adventures",
+      "sections": []
+    },
+    {
+      "path": "/adventures",
+      "title": "Lake Allatoona Fishing Guide | Heron Outdoor Adventures Atlanta GA",
+      "sections": [
+        "BOOK YOUR ADVENTURE",
+        "4 Hour Fishing Trip",
+        "6 Hour Guided Fishing Trip",
+        "Nature Adventure / Sunset Cruise",
+        "Lineside Experience Clinic"
+      ]
+    },
+    {
+      "path": "/fishing-guide-lake-allatoona",
+      "title": "Fishing Guide Lake Allatoona | Acworth GA | Heron Outdoor Adventures",
+      "sections": [
+        "From Fishing to Wildlife, Outdoor Excursions Are For All to Enjoy"
+      ]
+    },
+    {
+      "path": "/striper-fishing-guide",
+      "title": "Striper Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+      "sections": [
+        "Offering Comprehensive Fishing Guide Service"
+      ]
+    },
+    {
+      "path": "/crappie-fishing-guide",
+      "title": "Crappie Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+      "sections": [
+        "THE Premier Crappie Fishing Guide"
+      ]
+    },
+    {
+      "path": "/catfish",
+      "title": "Catfish! | Heron Outdoors",
+      "sections": [
+        "We are excited to now be offering Catfish Adventures in 2020. Start your trip out with an exciting boat ride in a new Storm Cat powered by a 250 Yamaha SHO, get the big bite from an Allatoona monster and end up with bragging rights for life. We will be targeting the bigger Blues, Flatheads and Channel Cats that elude most fisherman here on Allatoona, but we know exactly what to do to get that bite. We do believe that any trophy cats are best released to help sustain this fishery, but you can catch some eaters, too! 4-6 hour Day and Night trips available. Call for details today."
+      ]
+    },
+    {
+      "path": "/kids-fishing-guide",
+      "title": "Kids Fishing Guide | Acworth GA | Heron Outdoor Adventures",
+      "sections": []
+    },
+    {
+      "path": "/instructional-fishing-classes",
+      "title": "Instructional Fishing Classes | Acworth GA | Heron Outdoor Adventures",
+      "sections": [
+        "INSTRUCTIONAL CLASSES",
+        "Learn from the Guide Service that has over 40 years experience!",
+        "Have Questions?"
+      ]
+    },
+    {
+      "path": "/blog",
+      "title": "Blog | Heron Outdoor Adventures | United States",
+      "sections": [
+        "THE HERON REPORT",
+        "February Fishing Report - the Allatoona Bite",
+        "The Bite : Lake Allatoona fishing report for December",
+        "When the fish are chewing, what are you doing? Here's a few pointers to maximize your catches.",
+        "Lake Allatoona Fishing Report - The Bite",
+        "They chewing. Let's go fishing!!",
+        "The Bite - Lake Allatoona",
+        "The Bite - Lake Allatoona",
+        "The Bite: Lake Allatoona fishing report - March 23, 2024"
+      ]
+    },
+    {
+      "path": "/gift-card",
+      "title": "Gift Card | Heron Outdoors",
+      "sections": [
+        "Ticket to Adventure! Gift Cards for all occasions"
+      ]
+    }
+  ]
+}

@@ -20,32 +20,32 @@
 
 export const brand = {
   /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Aurora",
+  name: "Heron Outdoor Adventures",
 
   /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "The starter pack for shipping websites that don't look AI-built.",
+  tagline: "Your Premier Lake Allatoona Fishing Guide",
 
   /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "A production-grade Next.js + Tailwind + shadcn starter with a real design system, motion, and one-command deploy to Vercel.",
+    "Heron Outdoor Adventures is your premier Lake Allatoona fishing guide near Atlanta, Georgia. We specialize in catching Striped Bass, Hybrids, Crappie and all North Georgia species.",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "aurora.getyetti.com",
+  domain: "heronoutdooradventures.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
     /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 265,
+    hue: 259,
     /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
     corners: "rounded" as "sharp" | "rounded" | "pill",
     /** Default color scheme on first paint. */
-    defaultScheme: "dark" as "light" | "dark",
+    defaultScheme: "light" as "light" | "dark",
   },
 
   /** Fonts. Any Google Font name works — edit, then run `npm run brand`. */
   fonts: {
     /** Big headlines. Pick something with PERSONALITY — this is what breaks the AI look. */
-    display: "Space Grotesk",
+    display: "Bricolage Grotesque",
     /** Body / UI text. Keep it clean and readable. */
     sans: "Geist",
     /** Code / labels / kbd. */
@@ -54,9 +54,9 @@ export const brand = {
 
   /** Links shown in the footer + used by deploy scripts. */
   social: {
-    github: "your-org/your-repo",
-    x: "yourhandle",
-    email: "hello@aurora.example.com",
+    github: "FloFlo32/heronoutdooradventures",
+    x: "HeronOutdoor",
+    email: "hello@heronoutdooradventures.com",
   },
 
   /**
@@ -67,9 +67,9 @@ export const brand = {
    */
   contact: {
     whatsapp: "",
-    phone: "",
-    address: "",
-    mapQuery: "",
+    phone: "4049194918",
+    address: "Dallas, Georgia, 30102, United States",
+    mapQuery: "Dallas, Georgia, 30102, United States",
   },
 } as const;
 

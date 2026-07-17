@@ -1,23 +1,23 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { primaryLinks, guideLinks, secondaryLinks } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { href: "#features", label: "Features" },
-  { href: "#bento", label: "Why us" },
-  { href: "#stats", label: "Results" },
-  { href: "#cta", label: "Pricing" },
-];
+const telHref = `tel:+1${brand.contact.phone}`;
+const telLabel = "404-919-4918";
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const [guidesOpen, setGuidesOpen] = React.useState(false);
+  const pathname = usePathname();
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -26,29 +26,95 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  React.useEffect(() => {
+    setOpen(false);
+    setGuidesOpen(false);
+  }, [pathname]);
+
+  const isGuidePage = guideLinks.some((l) => l.href === pathname);
+
   return (
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "border-b border-border/60 bg-background/70 backdrop-blur-xl"
-          : "border-b border-transparent"
+          ? "border-b border-border bg-background/95 shadow-sm backdrop-blur-xl"
+          : "border-b border-transparent bg-background/80 backdrop-blur-sm"
       )}
     >
-      <nav className="container-px mx-auto flex h-16 max-w-6xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-          <span className="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm shadow-primary/30">
-            {brand.name.charAt(0)}
-          </span>
-          {brand.name}
+      <nav className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between gap-4">
+        <Link href="/" className="flex shrink-0 items-center" aria-label={`${brand.name} home`}>
+          <Image
+            src="/logo.png"
+            alt={`${brand.name} logo`}
+            width={200}
+            height={140}
+            priority
+            className="h-14 w-auto object-contain sm:h-16"
+          />
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
-          {links.map((l) => (
+        <div className="hidden items-center gap-1 lg:flex">
+          {primaryLinks.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className={cn(
+                "rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
+                pathname === l.href && "bg-accent text-foreground"
+              )}
+            >
+              {l.label}
+            </Link>
+          ))}
+
+          <div
+            className="relative"
+            onMouseEnter={() => setGuidesOpen(true)}
+            onMouseLeave={() => setGuidesOpen(false)}
+          >
+            <button
+              type="button"
+              className={cn(
+                "flex cursor-pointer items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
+                (isGuidePage || guidesOpen) && "bg-accent text-foreground"
+              )}
+              aria-expanded={guidesOpen}
+              aria-haspopup="true"
+              onClick={() => setGuidesOpen((o) => !o)}
+            >
+              Fishing Guides
+              <ChevronDown className={cn("size-4 transition-transform", guidesOpen && "rotate-180")} />
+            </button>
+
+            {guidesOpen && (
+              <div className="absolute left-1/2 top-full w-80 -translate-x-1/2 pt-2">
+                <div className="grid gap-1 rounded-2xl border border-border bg-card p-3 shadow-xl shadow-primary/10">
+                  {guideLinks.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      className={cn(
+                        "rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
+                        pathname === l.href && "bg-accent text-foreground"
+                      )}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {secondaryLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className={cn(
+                "rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
+                pathname === l.href && "bg-accent text-foreground"
+              )}
             >
               {l.label}
             </Link>
@@ -56,14 +122,15 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <Button asChild size="sm" className="hidden md:inline-flex">
-            <Link href="#cta">Get started</Link>
+            <a href={telHref}>
+              <Phone className="size-4" /> {telLabel}
+            </a>
           </Button>
           <Button
-            variant="ghost"
+            variant="outline"
             size="icon"
-            className="md:hidden"
+            className="lg:hidden"
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}
           >
@@ -73,22 +140,42 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
-          <div className="container-px mx-auto flex max-w-6xl flex-col gap-1 py-4">
-            {links.map((l) => (
+        <div className="border-t border-border bg-background lg:hidden">
+          <div className="container-px mx-auto flex max-w-7xl flex-col gap-1 py-4">
+            {primaryLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
               >
                 {l.label}
               </Link>
             ))}
-            <Button asChild className="mt-2">
-              <Link href="#cta" onClick={() => setOpen(false)}>
-                Get started
+            <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+              Fishing Guides
+            </p>
+            {guideLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+              >
+                {l.label}
               </Link>
+            ))}
+            {secondaryLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <Button asChild className="mt-3">
+              <a href={telHref}>
+                <Phone className="size-4" /> Call {telLabel}
+              </a>
             </Button>
           </div>
         </div>
