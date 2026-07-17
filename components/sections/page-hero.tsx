@@ -9,8 +9,9 @@ const telHref = `tel:+1${brand.contact.phone}`;
 
 /**
  * Shared inner-page hero: an auto-advancing photo slideshow fills the whole
- * section as the background; the title and CTA float on top in a solid,
- * fully opaque card (never a transparent scrim, so contrast always holds).
+ * section, with a uniform (non-gradient) dark wash for constant, reliable
+ * contrast, and centered content on top — matching the reference hero
+ * pattern. A flat wash reads evenly everywhere, unlike a fading scrim.
  */
 export function PageHero({
   eyebrow,
@@ -29,30 +30,29 @@ export function PageHero({
 }) {
   return (
     <section className="container-px mx-auto max-w-7xl pt-8">
-      <div className="relative h-[70vh] max-h-[640px] min-h-[480px] overflow-hidden rounded-3xl">
-        <Slideshow images={images} alt={imageAlt} className="absolute inset-0 h-full w-full" />
+      <div className="relative flex h-[75vh] max-h-[680px] min-h-[520px] items-center justify-center overflow-hidden rounded-3xl">
+        <Slideshow images={images} alt={imageAlt} className="absolute inset-0 h-full w-full" dots={false} />
+        <div className="absolute inset-0 bg-black/50" aria-hidden />
 
-        <Reveal className="absolute inset-x-4 bottom-4 sm:inset-x-8 sm:bottom-8">
-          <div className="mx-auto max-w-2xl rounded-2xl bg-card/95 px-6 py-7 shadow-2xl backdrop-blur-md sm:px-9 sm:py-9">
-            <div className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.18em] text-primary">
-              <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
-                Home
-              </Link>
-              <ChevronRight className="size-3" />
-              <span>{eyebrow}</span>
-            </div>
-            <h1 className="mt-3 text-balance text-3xl font-bold leading-[1.05] sm:text-4xl">
-              {title}
-            </h1>
-            {description && (
-              <p className="mt-3 max-w-2xl text-pretty text-muted-foreground">{description}</p>
-            )}
-            <Button asChild size="lg" className="mt-5">
-              <a href={telHref}>
-                <Phone className="size-4" /> {cta}
-              </a>
-            </Button>
+        <Reveal className="relative z-10 flex flex-col items-center px-6 text-center sm:px-12">
+          <div className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white/80">
+            <Link href="/" className="transition-colors hover:text-white">
+              Home
+            </Link>
+            <ChevronRight className="size-3" />
+            <span>{eyebrow}</span>
           </div>
+          <h1 className="mt-4 max-w-3xl text-balance text-4xl font-bold leading-[1.05] text-white sm:text-6xl">
+            {title}
+          </h1>
+          {description && (
+            <p className="mt-4 max-w-2xl text-pretty text-white/85 sm:text-lg">{description}</p>
+          )}
+          <Button asChild size="lg" className="mt-7">
+            <a href={telHref}>
+              <Phone className="size-4" /> {cta}
+            </a>
+          </Button>
         </Reveal>
       </div>
     </section>
