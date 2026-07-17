@@ -22,7 +22,7 @@ export default function GiftCardPage() {
         <PageHero
           eyebrow="Gift Card"
           title="Ticket to Adventure! Gift Cards for all occasions"
-          image="/ingested/heronoutdooradventures/content-030.webp"
+          images={["/ingested/heronoutdooradventures/content-030.webp"]}
           imageAlt="Angler holding a striped bass, a Heron Outdoor Adventures gift for any occasion"
           cta="Call to Purchase"
         />

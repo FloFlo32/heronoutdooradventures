@@ -3,39 +3,37 @@ import { ChevronRight, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/magic/reveal";
+import { Slideshow } from "@/components/magic/slideshow";
 
 const telHref = `tel:+1${brand.contact.phone}`;
 
 /**
- * Shared inner-page header: a big photo banner up top, the title and CTA sit
- * BELOW it on a solid surface (never text-over-photo). Mirrors the source
- * site, which uses the same fixed banner photo behind every inner page.
+ * Shared inner-page hero: an auto-advancing photo slideshow up top (never
+ * cropped — see PhotoFrame), the title and CTA sit BELOW it on a solid
+ * surface (never text-over-photo).
  */
 export function PageHero({
   eyebrow,
   title,
   description,
-  image,
+  images,
   imageAlt,
   cta = "Book Your Adventure",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
-  image: string;
+  images: string[];
   imageAlt: string;
   cta?: string;
 }) {
   return (
     <section className="container-px mx-auto max-w-7xl pt-8">
-      <div className="relative overflow-hidden rounded-3xl">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={image}
-          alt={imageAlt}
-          className="aspect-[12/5] max-h-[420px] min-h-[220px] w-full object-cover object-top"
-        />
-      </div>
+      <Slideshow
+        images={images}
+        alt={imageAlt}
+        className="aspect-[16/9] rounded-3xl sm:aspect-[21/9]"
+      />
 
       <Reveal>
         <div className="mx-auto -mt-10 max-w-4xl rounded-2xl border border-border bg-card px-6 py-8 shadow-xl shadow-primary/5 sm:px-10 sm:py-10">

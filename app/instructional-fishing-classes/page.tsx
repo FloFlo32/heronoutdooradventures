@@ -20,7 +20,11 @@ export default function InstructionalFishingClassesPage() {
           eyebrow="Fishing Guides"
           title="Instructional Classes"
           description="If you are looking for the best fishing guide Atlanta GA has to offer, then look no further. The team at Heron Outdoor Adventures is experienced, passionate, and dedicated to fishing and exploring the outdoors."
-          image="/ingested/heronoutdooradventures/content-009.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-009.webp",
+            "/ingested/heronoutdooradventures/content-023.webp",
+            "/ingested/heronoutdooradventures/content-024.webp",
+          ]}
           imageAlt="Angler holding a striped bass caught on Lake Allatoona"
           cta="Book Your Class"
         />

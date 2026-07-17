@@ -6,61 +6,56 @@ import { ServiceCard } from "@/components/sections/service-card";
 import { GuideCTA } from "@/components/sections/guide-cta";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
+import { listServices, getServiceFacts } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Book Your Adventure | Trips & Pricing",
+  title: "Adventures | Trips & Pricing",
   description:
     "Book your guided fishing trip for Striped Bass (Stripers), Hybrids, Spotted Bass, Crappie, Bream, Catfish or any other desired species on Lake Allatoona near Atlanta Georgia with Heron Outdoor Adventures.",
 };
 
 const waters = ["Lake Allatoona", "Carters Lake", "Lake Lanier", "Etowah River", "Coosa River"];
 
-const packages = [
-  {
-    title: "4 Hour Fishing Trip",
-    description: 'Please call or text 404-919-4918, or use the home page "Book Now" to reserve your spot.',
-    duration: "4 hr",
-    price: "$400",
+const cardImages: Record<string, { image: string; imageAlt: string; description: string; featured?: boolean }> = {
+  "4-hour-fishing-trip": {
     image: "/ingested/heronoutdooradventures/content-014.webp",
     imageAlt: "Angler holding a striped bass on Lake Allatoona",
-  },
-  {
-    title: "6 Hour Guided Fishing Trip",
     description: 'Please call or text 404-919-4918, or use the home page "Book Now" to reserve your spot.',
-    duration: "6 hr",
-    price: "$600",
+  },
+  "6-hour-guided-fishing-trip": {
     image: "/ingested/heronoutdooradventures/content-015.webp",
     imageAlt: "Young angler holding a striped bass on Lake Allatoona",
+    description: "Maximize your day on the water with a guided trip for up to 2 people.",
     featured: true,
   },
-  {
-    title: "Nature Adventure / Sunset Cruise",
-    description: "Relax and enjoy the sights and sounds of nature.",
-    duration: "2 hr",
-    price: "$150",
+  "nature-adventure-sunset-cruise": {
     image: "/ingested/heronoutdooradventures/content-009.webp",
     imageAlt: "Angler smiling with a striped bass catch on Lake Allatoona at sunset",
+    description: "Relax and enjoy the sights and sounds of nature.",
   },
-  {
-    title: "Lineside Experience Clinic",
-    description: "2-3 day excursions scheduled to maximize your adventure and learning.",
-    duration: "12 hr",
-    price: "From $1000",
+  "lineside-experience-clinic": {
     image: "/ingested/heronoutdooradventures/content-006.webp",
     imageAlt: "Two anglers holding a striped bass on Lake Allatoona",
+    description: "2-3 day excursions scheduled to maximize your adventure and learning.",
   },
-];
+};
 
 export default function AdventuresPage() {
+  const services = listServices();
+
   return (
     <>
       <Navbar />
       <main className="flex-1">
         <PageHero
-          eyebrow="Book Your Adventure"
+          eyebrow="Adventures"
           title="Book Your Adventure"
           description="Striper, bass, catfish, crappie, adventure: pick your trip and Pro Guide Joseph handles the rest."
-          image="/ingested/heronoutdooradventures/content-014.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-014.webp",
+            "/ingested/heronoutdooradventures/content-015.webp",
+            "/ingested/heronoutdooradventures/content-009.webp",
+          ]}
           imageAlt="Anglers holding a striped bass on Lake Allatoona"
         />
 
@@ -76,11 +71,25 @@ export default function AdventuresPage() {
 
         <section className="container-px mx-auto max-w-7xl py-14 sm:py-20">
           <RevealGroup className="grid gap-6 sm:grid-cols-2">
-            {packages.map((pkg) => (
-              <RevealItem key={pkg.title}>
-                <ServiceCard {...pkg} />
-              </RevealItem>
-            ))}
+            {services.map((service) => {
+              const facts = getServiceFacts(service);
+              const extra = cardImages[service.slug];
+              if (!extra) return null;
+              return (
+                <RevealItem key={service.slug}>
+                  <ServiceCard
+                    title={service.title.replace(" | Heron Outdoors", "")}
+                    description={extra.description}
+                    duration={facts.duration}
+                    price={facts.price}
+                    image={extra.image}
+                    imageAlt={extra.imageAlt}
+                    featured={extra.featured}
+                    href={`/adventures/${service.slug}`}
+                  />
+                </RevealItem>
+              );
+            })}
           </RevealGroup>
         </section>
 

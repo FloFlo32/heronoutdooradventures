@@ -20,7 +20,12 @@ export default function FishingGuideLakeAllatoonaPage() {
           eyebrow="Fishing Guides"
           title="Fishing Guide Lake Allatoona"
           description="Lake Allatoona is beautiful to explore. Close to Atlanta, this lake is filled with various species of fish, birds, and wildlife inhabiting the waters and areas surrounding the lake."
-          image="/ingested/heronoutdooradventures/content-009.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-016.webp",
+            "/ingested/heronoutdooradventures/content-009.webp",
+            "/ingested/heronoutdooradventures/content-011.webp",
+            "/ingested/heronoutdooradventures/content-018.webp",
+          ]}
           imageAlt="Angler smiling with a striped bass catch on Lake Allatoona"
         />
         <GuideSection

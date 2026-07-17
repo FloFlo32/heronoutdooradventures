@@ -20,7 +20,12 @@ export default function KidsFishingGuidePage() {
           eyebrow="Fishing Guides"
           title="Take Your Kid Fishing!"
           description="For some people, simply being outdoors in nature is enough to relax. Not everyone loves to fish, and that is alright! We too are passionate about the environment and nature, and are pleased to offer outdoor nature tours."
-          image="/ingested/heronoutdooradventures/content-021.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-021.webp",
+            "/ingested/heronoutdooradventures/content-022.webp",
+            "/ingested/heronoutdooradventures/content-023.webp",
+            "/ingested/heronoutdooradventures/content-024.webp",
+          ]}
           imageAlt="A young girl and her father holding a striped bass on Lake Allatoona"
           cta="Book a Trip"
         />

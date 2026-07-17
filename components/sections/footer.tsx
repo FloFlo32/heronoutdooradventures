@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Phone, MapPin } from "lucide-react";
 import { brand } from "@/brand.config";
 import { XIcon } from "@/components/icons";
-import { primaryLinks, guideLinks, secondaryLinks } from "@/lib/nav";
+import { primaryLinks, adventureLinks, guideLinks, secondaryLinks } from "@/lib/nav";
 
 const telHref = `tel:+1${brand.contact.phone}`;
 const telLabel = "404-919-4918";
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-semibold">Adventures</h4>
+          <h4 className="font-display text-sm font-semibold">Company</h4>
           <ul className="mt-4 space-y-2.5">
             {primaryLinks.map((l) => (
               <li key={l.href}>
@@ -69,9 +69,27 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="md:col-span-2">
+        <div>
+          <h4 className="font-display text-sm font-semibold">Adventures</h4>
+          <ul className="mt-4 space-y-2.5">
+            <li>
+              <Link href="/adventures" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                All Adventures
+              </Link>
+            </li>
+            {adventureLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
           <h4 className="font-display text-sm font-semibold">Fishing Guides</h4>
-          <ul className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+          <ul className="mt-4 space-y-2.5">
             {guideLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">

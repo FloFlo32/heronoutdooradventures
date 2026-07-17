@@ -20,7 +20,10 @@ export default function CrappieFishingGuidePage() {
           eyebrow="Fishing Guides"
           title="Crappie Fishing Guide"
           description="Navigating the waterways of Lake Allatoona can be a challenge. Finding the best places for fish native to this area can be hard, unless you know where to look. One of the fish that is prevalent in Lake Allatoona is the crappie."
-          image="/ingested/heronoutdooradventures/content-009.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-009.webp",
+            "/ingested/heronoutdooradventures/content-019.webp",
+          ]}
           imageAlt="Angler holding a striped bass caught on Lake Allatoona"
         />
         <GuideSection

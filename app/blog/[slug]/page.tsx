@@ -77,7 +77,7 @@ export default async function BlogPostPage({
         <PageHero
           eyebrow="The Heron Report"
           title={post.title}
-          image={post.images[0] ?? "/ingested/heronoutdooradventures/content-009.webp"}
+          images={post.images.length ? post.images : ["/ingested/heronoutdooradventures/content-009.webp"]}
           imageAlt={post.title}
         />
 

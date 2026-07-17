@@ -20,7 +20,11 @@ export default function StriperFishingGuidePage() {
           eyebrow="Fishing Guides"
           title="Striper Fishing Guide"
           description="Whether you have years of experience fishing, or are brand new to the sport, a fishing guide service can be a valuable asset to your adventure. For newcomers to the sport, we offer educational classes."
-          image="/ingested/heronoutdooradventures/content-009.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-009.webp",
+            "/ingested/heronoutdooradventures/content-006.webp",
+            "/ingested/heronoutdooradventures/content-017.webp",
+          ]}
           imageAlt="Angler holding a striped bass caught on Lake Allatoona"
           cta="Catch Some Striper"
         />

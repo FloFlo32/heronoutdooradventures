@@ -1,5 +1,6 @@
 import { brand } from "@/brand.config";
 import { AutoSlider } from "@/components/magic/auto-slider";
+import { PhotoFrame } from "@/components/magic/photo-frame";
 import { XIcon } from "@/components/icons";
 import { Reveal } from "@/components/magic/reveal";
 
@@ -38,16 +39,12 @@ export function SocialBand() {
         <div className="mt-12">
           <AutoSlider itemClassName="w-[75%] sm:w-[42%] lg:w-[23%]">
             {photos.map((p) => (
-              <div key={p.src} className="overflow-hidden rounded-2xl border border-border">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={p.src}
-                  alt={p.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[4/5] w-full object-cover"
-                />
-              </div>
+              <PhotoFrame
+                key={p.src}
+                src={p.src}
+                alt={p.alt}
+                className="aspect-[4/5] rounded-2xl border border-border"
+              />
             ))}
           </AutoSlider>
         </div>

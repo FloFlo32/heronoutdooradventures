@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/footer";
 import { PageHero } from "@/components/sections/page-hero";
 import { GuideCTA } from "@/components/sections/guide-cta";
 import { Reveal } from "@/components/magic/reveal";
+import { Gallery } from "@/components/magic/gallery";
 
 export const metadata: Metadata = {
   title: "About Us | Meet Your Guide",
@@ -18,7 +19,10 @@ export default function AboutUsPage() {
         <PageHero
           eyebrow="About Us"
           title="Meet Your Guide"
-          image="/ingested/heronoutdooradventures/content-011.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-011.webp",
+            "/ingested/heronoutdooradventures/content-009.webp",
+          ]}
           imageAlt="Pro Guide Joseph holding a striped bass caught on Lake Allatoona"
           cta="Book a Charter"
         />
@@ -45,6 +49,17 @@ export default function AboutUsPage() {
                 conservation, relationship building and creating memories that
                 last a lifetime.
               </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="mt-12">
+              <Gallery
+                images={[
+                  { src: "/ingested/heronoutdooradventures/content-018.webp", alt: "Pro Guide Joseph with a striped bass catch on a cloudy morning" },
+                  { src: "/ingested/heronoutdooradventures/content-006.webp", alt: "Pro Guide Joseph and a client with a striped bass at sunrise" },
+                ]}
+              />
             </div>
           </Reveal>
         </section>

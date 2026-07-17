@@ -3,6 +3,8 @@ import { Phone, Star } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/magic/reveal";
+import { Slideshow } from "@/components/magic/slideshow";
+import { PhotoFrame } from "@/components/magic/photo-frame";
 
 const telHref = `tel:+1${brand.contact.phone}`;
 
@@ -47,20 +49,20 @@ export function Hero() {
 
         <Reveal delay={0.2}>
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/ingested/heronoutdooradventures/content-015.webp"
-                alt="A young angler holding a striped bass caught on Lake Allatoona"
-                className="aspect-[4/5] w-full object-cover object-top sm:aspect-[5/6]"
-              />
-            </div>
-            <div className="absolute -bottom-8 -left-6 hidden w-44 overflow-hidden rounded-2xl border-4 border-background shadow-xl sm:block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <Slideshow
+              images={[
+                "/ingested/heronoutdooradventures/content-001.webp",
+                "/ingested/heronoutdooradventures/content-015.webp",
+                "/ingested/heronoutdooradventures/content-005.webp",
+              ]}
+              alt="Anglers holding striped bass caught on Lake Allatoona"
+              className="aspect-[4/5] rounded-3xl border border-border shadow-2xl shadow-primary/10 sm:aspect-[5/6]"
+            />
+            <div className="absolute -bottom-8 -left-6 hidden w-44 rounded-2xl border-4 border-background shadow-xl sm:block">
+              <PhotoFrame
                 src="/ingested/heronoutdooradventures/content-024.webp"
                 alt="A young angler smiling with a striped bass catch"
-                className="aspect-square w-full object-cover"
+                className="aspect-square rounded-xl"
               />
             </div>
           </div>

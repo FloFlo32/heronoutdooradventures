@@ -19,7 +19,7 @@ export default function CatfishPage() {
         <PageHero
           eyebrow="Fishing Guides"
           title="Catfish!"
-          image="/ingested/heronoutdooradventures/content-020.webp"
+          images={["/ingested/heronoutdooradventures/content-020.webp"]}
           imageAlt="Angler holding a large blue catfish at night on Lake Allatoona"
         />
         <GuideSection

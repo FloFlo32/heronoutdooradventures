@@ -7,16 +7,70 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
-import { primaryLinks, guideLinks, secondaryLinks } from "@/lib/nav";
+import { primaryLinks, adventureLinks, guideLinks, secondaryLinks } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 
 const telHref = `tel:+1${brand.contact.phone}`;
 const telLabel = "404-919-4918";
 
+function NavDropdown({
+  label,
+  overviewHref,
+  links,
+  active,
+}: {
+  label: string;
+  overviewHref: string;
+  links: { label: string; href: string }[];
+  active: boolean;
+}) {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <Link
+        href={overviewHref}
+        className={cn(
+          "flex cursor-pointer items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
+          (active || open) && "bg-accent text-foreground"
+        )}
+        aria-expanded={open}
+        aria-haspopup="true"
+        onFocus={() => setOpen(true)}
+      >
+        {label}
+        <ChevronDown className={cn("size-4 transition-transform", open && "rotate-180")} />
+      </Link>
+
+      {/* Always in the DOM (crawlable, no client-state gate) — only visibility is toggled. */}
+      <div
+        className={cn(
+          "absolute left-1/2 top-full w-80 -translate-x-1/2 pt-2 transition-all duration-150",
+          open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
+        )}
+      >
+        <div className="grid gap-1 rounded-2xl border border-border bg-card p-3 shadow-xl shadow-primary/10">
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
-  const [guidesOpen, setGuidesOpen] = React.useState(false);
   const pathname = usePathname();
 
   React.useEffect(() => {
@@ -28,9 +82,9 @@ export function Navbar() {
 
   React.useEffect(() => {
     setOpen(false);
-    setGuidesOpen(false);
   }, [pathname]);
 
+  const isAdventurePage = pathname === "/adventures" || adventureLinks.some((l) => l.href === pathname);
   const isGuidePage = guideLinks.some((l) => l.href === pathname);
 
   return (
@@ -68,44 +122,8 @@ export function Navbar() {
             </Link>
           ))}
 
-          <div
-            className="relative"
-            onMouseEnter={() => setGuidesOpen(true)}
-            onMouseLeave={() => setGuidesOpen(false)}
-          >
-            <button
-              type="button"
-              className={cn(
-                "flex cursor-pointer items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
-                (isGuidePage || guidesOpen) && "bg-accent text-foreground"
-              )}
-              aria-expanded={guidesOpen}
-              aria-haspopup="true"
-              onClick={() => setGuidesOpen((o) => !o)}
-            >
-              Fishing Guides
-              <ChevronDown className={cn("size-4 transition-transform", guidesOpen && "rotate-180")} />
-            </button>
-
-            {guidesOpen && (
-              <div className="absolute left-1/2 top-full w-80 -translate-x-1/2 pt-2">
-                <div className="grid gap-1 rounded-2xl border border-border bg-card p-3 shadow-xl shadow-primary/10">
-                  {guideLinks.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      className={cn(
-                        "rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground",
-                        pathname === l.href && "bg-accent text-foreground"
-                      )}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <NavDropdown label="Adventures" overviewHref="/adventures" links={adventureLinks} active={isAdventurePage} />
+          <NavDropdown label="Fishing Guides" overviewHref="/fishing-guide-lake-allatoona" links={guideLinks} active={isGuidePage} />
 
           {secondaryLinks.map((l) => (
             <Link
@@ -139,47 +157,68 @@ export function Navbar() {
         </div>
       </nav>
 
-      {open && (
-        <div className="border-t border-border bg-background lg:hidden">
-          <div className="container-px mx-auto flex max-w-7xl flex-col gap-1 py-4">
-            {primaryLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
-              >
-                {l.label}
-              </Link>
-            ))}
-            <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Fishing Guides
-            </p>
-            {guideLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
-              >
-                {l.label}
-              </Link>
-            ))}
-            {secondaryLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
-              >
-                {l.label}
-              </Link>
-            ))}
-            <Button asChild className="mt-3">
-              <a href={telHref}>
-                <Phone className="size-4" /> Call {telLabel}
-              </a>
-            </Button>
-          </div>
+      <div
+        className={cn(
+          "border-t border-border bg-background lg:hidden",
+          open ? "block" : "hidden"
+        )}
+      >
+        <div className="container-px mx-auto flex max-w-7xl flex-col gap-1 py-4">
+          {primaryLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+            >
+              {l.label}
+            </Link>
+          ))}
+
+          <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+            Adventures
+          </p>
+          <Link href="/adventures" className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground">
+            All Adventures
+          </Link>
+          {adventureLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+            >
+              {l.label}
+            </Link>
+          ))}
+
+          <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+            Fishing Guides
+          </p>
+          {guideLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+            >
+              {l.label}
+            </Link>
+          ))}
+
+          {secondaryLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-foreground"
+            >
+              {l.label}
+            </Link>
+          ))}
+          <Button asChild className="mt-3">
+            <a href={telHref}>
+              <Phone className="size-4" /> Call {telLabel}
+            </a>
+          </Button>
         </div>
-      )}
+      </div>
     </header>
   );
 }

@@ -23,7 +23,11 @@ export default function BlogPage() {
           eyebrow="The Heron Report"
           title="Lake Allatoona Fishing Report"
           description="All things awesome in nature on Lake Allatoona near Atlanta, Georgia."
-          image="/ingested/heronoutdooradventures/content-027.webp"
+          images={[
+            "/ingested/heronoutdooradventures/content-013.webp",
+            "/ingested/heronoutdooradventures/content-027.webp",
+            "/ingested/heronoutdooradventures/content-028.webp",
+          ]}
           imageAlt="Anglers on a boat with a striped bass catch on Lake Allatoona"
         />
 
